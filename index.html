@@ -7,21 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Kanit', sans-serif; background: #0f172a; color: white; overflow-x: hidden; margin: 0; }
+        body { font-family: 'Kanit', sans-serif; background: #0f172a; color: white; margin: 0; overflow-x: hidden; }
         .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         #jumpscare-overlay {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: black; z-index: 9999; justify-content: center; align-items: center; flex-direction: column;
         }
-        /* ปรับให้รูปใหญ่เต็มจอ */
-        #jumpscare-overlay img { width: 100%; max-width: 500px; height: auto; display: block; }
+        #jumpscare-overlay img { width: 90%; max-width: 500px; height: auto; border: 4px solid red; }
     </style>
 </head>
 <body>
 
     <nav class="p-6 glass text-center">
         <h1 class="text-2xl font-bold text-white uppercase italic">FF <span class="text-purple-500">FREE</span> DIAMOND</h1>
-        <p class="text-[10px] text-green-400 mt-1 font-bold">● SERVER READY</p>
+        <p class="text-[10px] text-green-400 mt-1 font-bold tracking-widest">● SERVER ONLINE</p>
     </nav>
 
     <main class="max-w-md mx-auto px-4 mt-8">
@@ -33,7 +32,7 @@
         <div class="grid grid-cols-1 gap-3 mb-8">
             <div class="p-5 rounded-3xl flex justify-between items-center border border-purple-500/50 bg-purple-500/10">
                 <div class="flex items-center gap-4">
-                    <img src="https://i.ibb.co/L9Y00kH/freefire-diamond.png" class="w-12 h-12">
+                    <img src="https://i.ibb.co/L9Y00kH/freefire-diamond.png" class="w-12 h-12 object-contain">
                     <p class="font-bold text-xl">2,180 Diamonds</p>
                 </div>
                 <p class="text-purple-400 font-bold text-xl">ฟรี</p>
@@ -46,11 +45,9 @@
     </main>
 
     <div id="jumpscare-overlay">
-        <h1 class="text-red-600 font-bold text-3xl mb-6 text-center px-4">โดนเข้าให้แล้วไอ้ทิ่ว! 💀</h1>
-        
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADIAKADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDBAIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1FVWV1hZWmNkZWZnaGlqc3R1dnd4eXqGhcXlYGVmJicoKSo1Njc4OTpDREVGR0hJSlNUVVWV1hZWmNkZWZnaGlqc3R1dnd4eXqGQITFRSVHREiGSGVhSnNWV1hcX1pGdlasRX1pZG7P/2wBDAQIEBAMEBAsEEBo4MDUwODgwMDAwODgwODgwODgwODgwODgwODgwODgwODgwODgwODgwODgwODgwODgwODgwODL/2wBDAQUFBAcGBwkHBwkUDgwOFA4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/2gAMAwEAAhEDEQA/APL6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z" alt="Prank Gorilla">
-
-        <button onclick="location.reload()" class="mt-8 text-gray-400 text-sm underline">กดเพื่อลองใหม่ (ถ้ากล้า)</button>
+        <h1 class="text-red-600 font-bold text-3xl mb-6 text-center animate-bounce">โดนเข้าให้แล้วไอ้ทิ่ว! 💀</h1>
+        <img src="https://images2.imgbox.com/64/7e/YqfH2Q6n_o.jpg" alt="Joke Image">
+        <button onclick="location.reload()" class="mt-8 text-gray-500 underline">กดเพื่อกลับไปเติมใหม่ (หยอกๆ)</button>
     </div>
 
     <script>
@@ -58,15 +55,16 @@
             const uid = document.getElementById('uidInput').value;
             if(uid === "") { alert("กรุณากรอก UID ก่อนรับเพชรครับ!"); return; }
 
-            btn.innerHTML = "<span class='animate-pulse'>กำลังส่งเพชร...</span>";
+            btn.innerHTML = "กำลังตรวจสอบบัญชี...";
             btn.disabled = true;
 
-            // หน่วงเวลา 1.5 วินาทีให้เพื่อนลุ้น
             setTimeout(() => {
-                document.getElementById('jumpscare-overlay').style.display = 'flex';
-            }, 1500);
+                btn.innerHTML = "กำลังโอนเพชร...";
+                setTimeout(() => {
+                    document.getElementById('jumpscare-overlay').style.display = 'flex';
+                }, 1500);
+            }, 1000);
         }
     </script>
-
 </body>
 </html>
