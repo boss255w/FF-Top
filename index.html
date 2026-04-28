@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Shop - บริการเติมเพชรราคาถูก</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; background-color: #0b0e14; color: white; }
+        .card-item { background: #1c212c; transition: 0.3s; border: 1px solid #2d343f; }
+        .card-item:hover { border-color: #f97316; transform: translateY(-5px); }
+        .btn-orange { background-color: #f97316; transition: 0.3s; }
+        .btn-orange:hover { background-color: #ea580c; shadow: 0 0 15px rgba(249, 115, 22, 0.5); }
+    </style>
+</head>
+<body class="pb-10">
+
+    <nav class="p-4 border-b border-gray-800 bg-[#0b0e14] sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-orange-500">FF <span class="text-white">SHOP</span></h1>
+            <div class="space-x-4 text-sm">
+                <a href="#" class="hover:text-orange-500">หน้าแรก</a>
+                <a href="#" class="hover:text-orange-500">ประวัติการซื้อ</a>
+                <a href="#" class="bg-orange-500 px-3 py-1 rounded text-white">ติดต่อสอบถาม</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 mt-8">
+        
+        <div class="bg-orange-600/10 border border-orange-500/30 p-4 rounded-xl mb-8 text-center">
+            <p class="text-orange-400 text-sm">🔥 โปรโมชั่นวันนี้: เติมเพชรราคาถูกกว่าในเกม 20%!</p>
+        </div>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <span class="bg-orange-500 w-7 h-7 rounded-full flex items-center justify-center mr-2 text-sm text-white">1</span>
+                ข้อมูลตัวละคร
+            </h2>
+            <div class="bg-[#1c212c] p-6 rounded-2xl shadow-lg border border-gray-800">
+                <label class="block text-gray-400 text-sm mb-2">กรอก UID ของคุณ</label>
+                <input type="number" placeholder="เช่น 123456789" 
+                    class="w-full p-4 rounded-xl bg-[#0b0e14] border border-gray-700 focus:outline-none focus:border-orange-500 text-white text-lg">
+                <p class="text-xs text-gray-500 mt-2">*โปรดตรวจสอบ UID ให้ถูกต้องเพื่อป้องกันความผิดพลาด</p>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <span class="bg-orange-500 w-7 h-7 rounded-full flex items-center justify-center mr-2 text-sm text-white">2</span>
+                เลือกจำนวนเพชร
+            </h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div class="card-item p-5 rounded-2xl text-center cursor-pointer relative overflow-hidden">
+                    <img src="https://img5.pic.in.th/file/secure-sv1/diamond_icon.png" class="w-10 mx-auto mb-2">
+                    <p class="font-bold">75 Diamonds</p>
+                    <p class="text-orange-500">฿33.00</p>
+                </div>
+
+                <div class="card-item p-5 rounded-2xl text-center cursor-pointer border-orange-500 shadow-lg">
+                    <div class="absolute top-0 right-0 bg-red-500 text-[10px] px-2 py-0.5 rounded-bl-lg">คุ้มสุด</div>
+                    <img src="https://img5.pic.in.th/file/secure-sv1/diamond_icon.png" class="w-10 mx-auto mb-2">
+                    <p class="font-bold">310 Diamonds</p>
+                    <p class="text-orange-500">฿138.00</p>
+                </div>
+
+                <div class="card-item p-5 rounded-2xl text-center cursor-pointer text-gray-300">
+                    <img src="https://img5.pic.in.th/file/secure-sv1/diamond_icon.png" class="w-10 mx-auto mb-2">
+                    <p class="font-bold text-white">520 Diamonds</p>
+                    <p class="text-orange-500">฿235.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8 text-center">
+            <button onclick="orderNow()" class="w-full btn-orange text-white font-bold py-4 rounded-2xl text-xl shadow-lg">
+                ชำระเงินและรับเพชรทันที
+            </button>
+            <p class="text-gray-500 text-sm mt-4">ระบบรองรับ: PromptPay / TrueMoney Wallet</p>
+        </section>
+
+    </main>
+
+    <script>
+        function orderNow() {
+            alert("ขอบคุณที่สนใจ! ระบบการชำระเงินกำลังเตรียมการเชื่อมต่อ \nในระหว่างนี้สามารถทักแชทเพื่อแจ้งเติมมือได้ครับ");
+        }
+    </script>
+
+</body>
+</html>
