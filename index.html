@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -32,16 +32,14 @@
         }
         @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
         .announcement { white-space: nowrap; overflow: hidden; position: relative; background: rgba(168, 85, 247, 0.2); }
-        .announcement p { display: inline-block; animation: scroll 15s linear infinite; }
-        
-        /* ซ่อนลูกศรใน input number */
+        .announcement p { display: inline-block; animation: scroll 20s linear infinite; }
         input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
     </style>
 </head>
 <body class="pb-10">
 
     <div class="announcement py-2 text-[12px] text-purple-200 border-b border-purple-500/30">
-        <p>✅ ยินดีด้วย UID 542*** เติมสำเร็จ 520 เพชร | ✅ ยินดีด้วย UID 901*** เติมสำเร็จ 77 เพชร | ✅ ยินดีด้วย UID 228*** เติมสำเร็จ 1060 เพชร</p>
+        <p>✅ ยินดีด้วย UID 542*** เติมสำเร็จ 520 เพชร | ✅ ยินดีด้วย UID 901*** เติมสำเร็จ 77 เพชร | ✅ ยินดีด้วย UID 228*** เติมสำเร็จ 1060 เพชร | ✅ ยินดีด้วย UID 774*** เติมสำเร็จ 150 เพชร</p>
     </div>
 
     <nav class="p-6 glass text-center sticky top-0 z-50">
@@ -53,7 +51,7 @@
         
         <div class="glass p-5 rounded-2xl mb-6">
             <h2 class="text-sm font-semibold mb-3 text-purple-400">1. ข้อมูลผู้เล่น</h2>
-            <input type="number" placeholder="กรอกตัวเลข UID ของคุณ" class="w-full p-4 rounded-xl bg-black/40 border border-white/10 focus:border-purple-500 outline-none transition">
+            <input type="number" placeholder="กรอกตัวเลข UID ของคุณ" class="w-full p-4 rounded-xl bg-black/40 border border-white/10 focus:border-purple-500 outline-none transition text-white">
         </div>
 
         <h2 class="text-sm font-semibold mb-3 text-purple-400 pl-1">2. เลือกแพ็กเกจ</h2>
@@ -61,7 +59,7 @@
             
             <div class="package-card p-4 rounded-2xl flex justify-between items-center">
                 <div class="flex items-center gap-3">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/1000018101.jpg" class="w-8 h-8 object-contain" alt="diamond">
+                    <img src="https://lh3.googleusercontent.com/d/1C42L-8W-xG461e7U6M5G_pB_7W4kP9n4" class="w-10 h-10 object-cover rounded-full border border-purple-500/50" alt="FF Shop">
                     <div>
                         <p class="font-bold">77 Diamonds</p>
                         <p class="text-[10px] text-gray-400">ส่งไว ภายใน 1-3 นาที</p>
@@ -72,25 +70,12 @@
                 </div>
             </div>
 
-            <div class="package-card p-4 rounded-2xl flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/1000018101.jpg" class="w-8 h-8 object-contain" alt="diamond">
-                    <div>
-                        <p class="font-bold">150 Diamonds</p>
-                        <p class="text-[10px] text-gray-400">ส่งไว ภายใน 1-3 นาที</p>
-                    </div>
-                </div>
-                <div class="text-right">
-                    <p class="text-purple-400 font-bold">฿65</p>
-                </div>
-            </div>
-
             <div class="package-card p-4 rounded-2xl flex justify-between items-center border-purple-500/50 bg-purple-500/10">
                 <div class="flex items-center gap-3">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/1000018101.jpg" class="w-8 h-8 object-contain" alt="diamond">
+                    <img src="https://lh3.googleusercontent.com/d/1C42L-8W-xG461e7U6M5G_pB_7W4kP9n4" class="w-10 h-10 object-cover rounded-full border border-purple-500/50" alt="FF Shop">
                     <div>
                         <p class="font-bold">520 Diamonds</p>
-                        <p class="text-[10px] text-yellow-400">🔥 ยอดนิยม</p>
+                        <p class="text-[10px] text-yellow-400 font-medium">🔥 แนะนำยอดนิยม</p>
                     </div>
                 </div>
                 <div class="text-right">
@@ -98,15 +83,28 @@
                 </div>
             </div>
 
+            <div class="package-card p-4 rounded-2xl flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <img src="https://lh3.googleusercontent.com/d/1C42L-8W-xG461e7U6M5G_pB_7W4kP9n4" class="w-10 h-10 object-cover rounded-full border border-purple-500/50" alt="FF Shop">
+                    <div>
+                        <p class="font-bold">1060 Diamonds</p>
+                        <p class="text-[10px] text-gray-400">คุ้มค่าที่สุด</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-purple-400 font-bold">฿300</p>
+                </div>
+            </div>
+
         </div>
 
-        <button onclick="window.location.href='https://line.me/ti/p/YOUR_ID'" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 p-4 rounded-xl font-bold text-white shadow-lg shadow-purple-500/20 active:scale-95 transition-all">
+        <button onclick="window.location.href='https://tmn.app.link/V3bUgr26H2b'" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 p-4 rounded-xl font-bold text-white shadow-lg shadow-purple-500/40 active:scale-95 transition-all text-lg">
             ชำระเงินทันที
         </button>
         
-        <p class="text-center text-[10px] text-gray-500 mt-4">© 2026 FF PREMIUM SHOP - All Rights Reserved</p>
+        <p class="text-center text-[10px] text-gray-500 mt-6 tracking-widest uppercase">© 2026 FF PREMIUM SHOP BY KEE</p>
 
     </main>
 
 </body>
-</html>>
+</html>
